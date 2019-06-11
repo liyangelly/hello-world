@@ -1,4 +1,4 @@
-def caculator(): #定义计算器
+def caculator(): #定义计算器，家庭作业
     formula00 = input('请输入公式') #公式
     formula01 = '' #处理之后的字符串（包含数字和运算符号）
     for i in formula00:
