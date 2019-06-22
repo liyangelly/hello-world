@@ -1,0 +1,20 @@
+a=[0,1,2,3,4,5,6,7,8,9]
+a.reverse()#反转，前后颠倒
+print(a)
+b=[]#空列表
+for i in range(len(a)):#取出位符号
+    b.append(str(a[i]))#取出a中的要元素到位符号上,是一个列表
+print(b)
+c=''.join(b)#把列表变为字符串，返回一个由b中的字符串拼接而成的字符串
+print(c)
+d=c[2:8]
+print(d)
+d=d[::-1]
+c=int(d)
+print(c)
+e1=bin(c)#二进制
+e2=oct(c)#八进制
+e3=hex(c)#十六进制
+print(e1)
+print(e2)
+print(e3)
