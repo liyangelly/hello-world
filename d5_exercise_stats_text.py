@@ -21,13 +21,16 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 '''
 a= text.replace(',', ' ').replace('.', ' ').replace(  '--', ' ').replace('!', ' ').replace('*', ' ') #标点符号替换为空格
+print(a)
 b= a.split() #按照空格进行分割成单个的单词
+print(b)
 
 c={}#按照{'is':10,'better': 9, ...}摆放
 for i in b: 
     d=b.count(i)#i出现的次数
     e={i:d}#摆放顺序
     c.update(e)#迭代？？
+print(c)
 
 f=sorted(c.items(),key=lambda x:x[1],reverse=True) # key=lambda  变量：变量[维数] 。维数可以按照自己的需要进行设置。按前面的value值排序
 print(f)
