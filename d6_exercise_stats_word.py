@@ -19,7 +19,9 @@ And four to five years slipped away
 四 到 五 年 散 落
 
 Then he went to England
+然 后 他 去 了 英 国
 Played the piano
+弹 钢 琴
 And married an actress named Kim
 They had a fine life, she was a good wife
 And bore him young son named Jim
