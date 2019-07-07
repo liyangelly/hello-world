@@ -1,6 +1,7 @@
 text='''
 
 How The Foolish Old Man Moved Mountains
+愚 公 移 山 与 红 衣 衫
 Yugong was a ninety-year-old man who lived at the north of two high
 mountains, Mount Taixing and Mount Wangwu.
 Stretching over a wide expanse of land, the mountains blocked
