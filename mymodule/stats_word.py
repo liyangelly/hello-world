@@ -42,7 +42,7 @@ Filled with admiration for Yugong, the Emperor of Heavens ordered two
 mighty gods to carry the mountains away.
 
 '''
-symbol = ",.!-'\""
+symbol = ",.?!-‘’“”\""
 for str in symbol:
     text = text.replace(str,'') #替换符号为空格符号
 print(text)
@@ -63,7 +63,7 @@ print (sorted(stats_text_en(text).items(), key=lambda x:x[1],reverse=True))
 
 import re
 def states_text_cn(text):
-    result=re.sub("[A-Za-z0-9]"," ",text) #过滤字符串中的英文与符号，保留汉字
+    result=re.sub("[A-Za-z0-9]"," ",text.strip()) #过滤字符串中的英文与符号，保留汉字
     d = {} #统计字符以及出现的次数
     for x in result.split(): #切片
         if x not in d:

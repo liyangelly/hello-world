@@ -12,7 +12,7 @@ Savin' the world on his own
 But the warm summer breezes
 The French wines and cheeses
 Put his ambition at bay
-把 他 的 野 心 放 在 海 湾
+把他的野 心 放 在 海 湾
 His summers and winters
 Scattered like splinters
 And four to five years slipped away
@@ -63,7 +63,7 @@ print(text)
 
 import re
 def stats_text_en(text):
-    result=re.sub("[^A-Za-z]", " ", text.strip())#使用正则表达式"[a-zA-Z]+"，将非英文字母替换成空字符
+    result=re.sub("[^A-Za-z]", " ", text.strip())#使用正则表达式"[a-zA-Z]+"，将非英文字母替换成空字符,text.strip()移除text中的空格符的副本
     d = {} #统计字符以及出现的次数
     for x in result.split(): #切片
         if x not in d:
@@ -73,11 +73,11 @@ def stats_text_en(text):
     return d
 print(stats_text_en(text)) #打印定义的函数
 print("按照出现次数从大到小输出所有的单词及出现的次数")
-print (sorted(stats_text_en(text).items(), key=lambda x:x[1],reverse=True))
+print (sorted(stats_text_en(text).items(), key=lambda x:x[1],reverse=True))#Return a new view of the dictionary’s items ((key, value) pairs). 
 
 import re
 def states_text_cn(text):
-    result=re.sub("[A-Za-z0-9]"," ",text) #过滤字符串中的英文与符号，保留汉字
+    result=re.sub("[a-zA-Z0-9]"," ",text)#将英文字符及数字字符替换成空字符，保留汉字
     d = {} #统计字符以及出现的次数
     for x in result.split(): #切片
         if x not in d:
