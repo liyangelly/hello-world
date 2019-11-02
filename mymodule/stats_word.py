@@ -74,3 +74,15 @@ def states_text_cn(text):
 print(states_text_cn(text)) #打印定义的函数
 print("按照出现次数从大到小输出所有的单词及出现的次数")
 print (sorted(states_text_cn(text).items(), key=lambda x:x[1],reverse=True))
+
+def stats_text(text):
+    if isinstance(text,str) != True:
+        raise ValueError
+    else:
+        return dict(stats_text_en(text),stats_text_cn(text))
+
+def stats_text2(text_en_cn) :
+    if type(text_en_cn) == str : 
+            return (stats_text_en(text_en_cn)+stats_text_cn(text_en_cn))
+    else :
+            raise ValueError ('type of argumengt is not str')
